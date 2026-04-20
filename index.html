@@ -1204,7 +1204,7 @@
         <div><div class="rl">Sponsor &amp; Lider</div><div class="nm">Juan Munoz</div></div>
       </div>
       <div class="per">
-        <div style="font-size:13px;color:var(--text-light);">Estado:</div>
+        <div style="font-size:13px;color:var(--text-light);" class="estado-label">Estado:</div>
         <div><span class="st-badge">Avanzado</span></div>
       </div>
     </div>
@@ -1379,11 +1379,11 @@
     // S10
     ['#s10 h2','Gobernanza y proximos pasos','Governance & next steps'],
     ['#s10 .col:nth-child(1) h3','Como lo gobernamos','How we govern'],
-    ['#s10 .gi:nth-child(1) p','<strong>Steering Committee</strong> supervisa avance, prioridades y gobernanza global','<strong>Steering Committee</strong> oversees progress, priorities and global governance'],
-    ['#s10 .gi:nth-child(2) p','<strong>Sponsor + Lider</strong> en cada proyecto con responsabilidad clara y blueprint definido','<strong>Sponsor + Leader</strong> in each project with clear accountability and defined blueprint'],
-    ['#s10 .gi:nth-child(3) p','<strong>Amador</strong> como recurso de apoyo continuo bisemanal para todos los equipos','<strong>Amador</strong> as continuous bi-weekly support resource for all teams'],
-    ['#s10 .gi:nth-child(4) p','<strong>IT (Juan Munoz)</strong> como soporte transversal y coordinacion tecnica','<strong>IT (Juan Munoz)</strong> as cross-functional support and technical coordination'],
-    ['#s10 .gi:nth-child(5) p','<strong>Seguimiento estructurado</strong> del avance de cada proyecto con reporting al Leadership','<strong>Structured tracking</strong> of each project\u2019s progress with Leadership reporting'],
+    ['#s10 .gi:nth-child(2) p','<strong>Steering Committee</strong> supervisa avance, prioridades y gobernanza global','<strong>Steering Committee</strong> oversees progress, priorities and global governance'],
+    ['#s10 .gi:nth-child(3) p','<strong>Sponsor + Lider</strong> en cada proyecto con responsabilidad clara y blueprint definido','<strong>Sponsor + Leader</strong> in each project with clear accountability and defined blueprint'],
+    ['#s10 .gi:nth-child(4) p','<strong>Amador</strong> como recurso de apoyo continuo bisemanal para todos los equipos','<strong>Amador</strong> as continuous bi-weekly support resource for all teams'],
+    ['#s10 .gi:nth-child(5) p','<strong>IT (Juan Munoz)</strong> como soporte transversal y coordinacion tecnica','<strong>IT (Juan Munoz)</strong> as cross-functional support and technical coordination'],
+    ['#s10 .gi:nth-child(6) p','<strong>Seguimiento estructurado</strong> del avance de cada proyecto con reporting al Leadership','<strong>Structured tracking</strong> of each project\u2019s progress with Leadership reporting'],
     ['#s10 .col:nth-child(2) h3','Modelo de cada proyecto','Project model'],
     ['#s10 .mr:nth-child(1) .nm2','Jefe del area','Area head'],
     ['#s10 .mr:nth-child(2) .rl2','Lider','Leader'],
@@ -1402,6 +1402,103 @@
     ['#s11 .mets div:nth-child(1) .ml','Personas impactadas','People empowered'],
     ['#s11 .mets div:nth-child(2) .ml','Iniciativas estrategicas','Strategic initiatives'],
     ['#s11 .mets div:nth-child(3) .ml','Proyectos arrancados','Projects launched'],
+
+    // S5 chip people (Sponsor/Lider -> Leader)
+    ['#s5 .prow:nth-child(1) .pp','Sponsor: Max &middot; Lider: Ana','Sponsor: Max &middot; Leader: Ana'],
+    ['#s5 .prow:nth-child(2) .pp','Sponsor &amp; Lider: A. Fernandez','Sponsor &amp; Leader: A. Fernandez'],
+    ['#s5 .prow:nth-child(5) .pchip .pp','Sponsor &amp; Lider: C. Alvarez','Sponsor &amp; Leader: C. Alvarez'],
+    ['#s5 .prow:nth-child(5) .pchip2 .pp','Sponsor: J. Munoz &middot; Lider: F. Plaja','Sponsor: J. Munoz &middot; Leader: F. Plaja'],
+    ['#s5 .prow:nth-child(6) .pp','Sponsor &amp; Lider: Marta','Sponsor &amp; Leader: Marta'],
+    ['#s5 .prow:nth-child(7) .pp','Sponsor: V. de Vega &middot; Lider: Nestor','Sponsor: V. de Vega &middot; Leader: Nestor'],
+    ['#s5 .prow:nth-child(8) .pp','Sponsor: J. Zaforas &middot; Lider: Eduardo','Sponsor: J. Zaforas &middot; Leader: Eduardo'],
+    ['#s5 .prow:nth-child(10) .pp','Sponsor &amp; Lider: J. Munoz','Sponsor &amp; Leader: J. Munoz'],
+
+    // S6 area headers
+    ['#s6 tbody tr:nth-child(9) td','Finanzas / IT','Finance / IT'],
+
+    // S6 project names (column 1)
+    ['#s6 tbody tr:nth-child(5) td:first-child','MRP con IA (Demand &rarr; Sourcing)','AI-powered MRP (Demand &rarr; Sourcing)'],
+    ['#s6 tbody tr:nth-child(6) td:first-child','Proyectos individuales','Individual projects'],
+    ['#s6 tbody tr:nth-child(8) td:first-child','Bot de atencion al cliente','Customer support bot'],
+    ['#s6 tbody tr:nth-child(11) td:first-child','Herramienta Cierre Contable','Accounting Close Tool'],
+    ['#s6 tbody tr:nth-child(12) td:first-child','Proceso de Aprobacion SPO','SPO Approval Process'],
+    ['#s6 tbody tr:nth-child(13) td:first-child','Procedimentacion Cia.','Company Procedures'],
+    ['#s6 tbody tr:nth-child(14) td:first-child','Secretario ExCo','ExCo Secretary'],
+    ['#s6 tbody tr:nth-child(15) td:first-child','Automatizaciones Tareas Administracion','Admin Task Automation'],
+    ['#s6 tbody tr:nth-child(16) td:first-child','Tesoreria (Pool, Conciliacion, Cash Flow)','Treasury (Pool, Reconciliation, Cash Flow)'],
+    ['#s6 tbody tr:nth-child(17) td:first-child','Presentaciones F&amp;A','F&amp;A Presentations'],
+    ['#s6 tbody tr:nth-child(19) td:first-child','Modelo Valoracion Compania','Company Valuation Model'],
+    ['#s6 tbody tr:nth-child(20) td:first-child','Automatizacion Rolling Ventas','Sales Rolling Automation'],
+    ['#s6 tbody tr:nth-child(22) td:first-child','Objetivos Compania','Company Objectives'],
+    ['#s6 tbody tr:nth-child(26) td:first-child','Marco de trabajo PM','PM Framework'],
+    ['#s6 tbody tr:nth-child(26) td:nth-child(2)','Analisis Mercado / Competencia &middot; Definicion de Producto','Market Analysis / Competitors &middot; Product Definition'],
+
+    // S6 status badges (row by row)
+    ['#s6 tbody tr:nth-child(2) .st','En construccion','Under construction'],
+    ['#s6 tbody tr:nth-child(3) .st','Construccion avanzada','Advanced build'],
+    ['#s6 tbody tr:nth-child(6) .st','En progreso','In progress'],
+    ['#s6 tbody tr:nth-child(8) .st','Avanzado','Advanced'],
+    ['#s6 tbody tr:nth-child(10) .st','Fase 1 completa','Phase 1 complete'],
+    ['#s6 tbody tr:nth-child(11) .st','Terminado','Completed'],
+    ['#s6 tbody tr:nth-child(13) .st','Avanzado','Advanced'],
+    ['#s6 tbody tr:nth-child(14) .st','En progreso','In progress'],
+    ['#s6 tbody tr:nth-child(18) .st','Avanzado','Advanced'],
+    ['#s6 tbody tr:nth-child(19) .st','Avanzado','Advanced'],
+    ['#s6 tbody tr:nth-child(20) .st','En progreso','In progress'],
+    ['#s6 tbody tr:nth-child(22) .st','Avanzado','Advanced'],
+    ['#s6 tbody tr:nth-child(24) .st','En progreso','In progress'],
+    ['#s6 tbody tr:nth-child(26) .st','En progreso','In progress'],
+
+    // S5B app card bullets
+    ['#s5b .app-card:nth-child(1) li:nth-child(1)','Crear presentaciones en HTML como esta','Create HTML presentations like this one'],
+    ['#s5b .app-card:nth-child(1) li:nth-child(2)','Generar informes, resumenes ejecutivos y actas','Generate reports, executive summaries and minutes'],
+    ['#s5b .app-card:nth-child(1) li:nth-child(3)','Redactar y maquetar documentacion interna','Draft and format internal documentation'],
+    ['#s5b .app-card:nth-child(2) li:nth-child(1)','Plug-in de Claude en Excel: analisis, formulas, limpieza de datos','Claude plug-in in Excel: analysis, formulas, data cleaning'],
+    ['#s5b .app-card:nth-child(2) li:nth-child(2)','Generacion de slides en PowerPoint con IA','Slide generation in PowerPoint with AI'],
+    ['#s5b .app-card:nth-child(2) li:nth-child(3)','Automatizacion de dashboards y reportes','Dashboard and report automation'],
+    ['#s5b .app-card:nth-child(3) li:nth-child(1)','Tareas repetitivas y administrativas sencillas','Repetitive and simple admin tasks'],
+    ['#s5b .app-card:nth-child(3) li:nth-child(2)','Clasificacion y enrutamiento de emails','Email classification and routing'],
+    ['#s5b .app-card:nth-child(3) li:nth-child(3)','Rellenado automatico de formularios y plantillas','Auto-fill of forms and templates'],
+    ['#s5b .app-card:nth-child(4) li:nth-child(1)','Resumenes automaticos de reuniones','Automatic meeting summaries'],
+    ['#s5b .app-card:nth-child(4) li:nth-child(2)','Extraccion de tareas y decisiones clave','Extraction of key tasks and decisions'],
+    ['#s5b .app-card:nth-child(4) li:nth-child(3)','Generacion de flujos y flujogramas a partir de transcripciones','Flow and flowchart generation from transcripts'],
+    ['#s5b .app-card:nth-child(5) li:nth-child(1)','Redaccion de emails profesionales en segundos','Writing professional emails in seconds'],
+    ['#s5b .app-card:nth-child(5) li:nth-child(2)','Traduccion y adaptacion de contenido multiidioma','Translation and multilingual content adaptation'],
+    ['#s5b .app-card:nth-child(5) li:nth-child(3)','Creacion de newsletters y comunicados internos','Creation of newsletters and internal communications'],
+    ['#s5b .app-card:nth-child(6) li:nth-child(1)','Consultar datos de sistemas internos con lenguaje natural','Query internal systems data in natural language'],
+    ['#s5b .app-card:nth-child(6) li:nth-child(2)','Analisis de competencia y mercado','Competitor and market analysis'],
+    ['#s5b .app-card:nth-child(6) li:nth-child(3)','Investigacion y sintesis de documentacion tecnica','Research and synthesis of technical documentation'],
+
+    // S9B Procedimentacion Cia. (full blueprint slide)
+    ['#s9b h2','Procedimentacion Cia.','Company Procedures'],
+    ['#s9b .bp-sub','Blueprint del proyecto &mdash; Proceso GOV (Estrategicos y Governance)','Project blueprint &mdash; GOV Process (Strategic &amp; Governance)'],
+    ['#s9b .bp-section:nth-child(1) h3','Objetivos','Objectives'],
+    ['#s9b .bp-section:nth-child(1) li:nth-child(1)','<strong>Procedimentar la compania</strong> &mdash; hacerla facil de navegar: descripcion de tareas y aplicacion para consultar tareas/flujos con facilidad','<strong>Procedurise the company</strong> &mdash; make it easy to navigate: task descriptions and an app to check tasks/flows easily'],
+    ['#s9b .bp-section:nth-child(1) li:nth-child(2)','<strong>Columna vertebral de proyectos IA</strong> &mdash; monitorizar la mejora de productividad de las automatizaciones','<strong>Backbone of AI projects</strong> &mdash; monitor productivity gains from automations'],
+    ['#s9b .bp-section:nth-child(2) h3','Entregables','Deliverables'],
+    ['#s9b .bp-section:nth-child(2) li:nth-child(1)','Estrategia','Strategy'],
+    ['#s9b .bp-section:nth-child(2) li:nth-child(2)','Macroprocesos / Procesos / Subprocesos','Macro-processes / Processes / Sub-processes'],
+    ['#s9b .bp-section:nth-child(2) li:nth-child(3)','Tareas','Tasks'],
+    ['#s9b .bp-section:nth-child(2) li:nth-child(4)','Riesgos - Controles / Puntos de Mejora','Risks - Controls / Improvement points'],
+    ['#s9b .bp-section:nth-child(2) li:nth-child(5)','Indicadores','Indicators'],
+    ['#s9b .bp-section:nth-child(2) li:nth-child(6)','Agente de consulta','Query agent'],
+    ['#s9b .bp-section:nth-child(3) h3','Base de Conocimiento','Knowledge Base'],
+    ['#s9b .bp-section:nth-child(3) li:nth-child(1)','<strong>Transcripciones</strong> (automatismo para transformarlas)','<strong>Transcriptions</strong> (automation to transform them)'],
+    ['#s9b .bp-section:nth-child(3) li:nth-child(2)','ExCo (prioridad) + todas las demas','ExCo (priority) + all others'],
+    ['#s9b .bp-section:nth-child(3) li:nth-child(3)','<strong>Carpeta Info Financiera</strong>','<strong>Financial Info Folder</strong>'],
+    ['#s9b .bp-section:nth-child(3) li:nth-child(4)','Cierres, Budgets, Business Plans, Rolling Ventas, Rolling Forecast','Closings, Budgets, Business Plans, Sales Rolling, Rolling Forecast'],
+    ['#s9b .bp-section:nth-child(3) li:nth-child(5)','Presentaciones Corporativas','Corporate Presentations'],
+    ['#s9b .bp-section:nth-child(3) li:nth-child(6)','Documentacion Procesos','Process Documentation'],
+    ['#s9b .bp-section:nth-child(3) li:nth-child(7)','<strong>Datos Sistemas via MCPs</strong>','<strong>Systems Data via MCPs</strong>'],
+    ['#s9b .bp-section:nth-child(3) li:nth-child(8)','ERP BC, CRM Dynamics, SQL DWH, PBI, SPO, JIRA/Tempo, Confluence','ERP BC, CRM Dynamics, SQL DWH, PBI, SPO, JIRA/Tempo, Confluence'],
+    ['#s9b .bp-section:nth-child(3) li:nth-child(9)','Listado de personas de la cia (Puesto / Rol)','List of company people (Position / Role)'],
+    ['#s9b .bp-section:nth-child(4) h3','Aplicacion','Application'],
+    ['#s9b .bp-section:nth-child(4) li:nth-child(1)','<strong>Aplicacion para interactuar con el resultado</strong> &mdash; consultar, navegar y trabajar con la estrategia y procesos','<strong>App to interact with the output</strong> &mdash; browse, navigate and work with the strategy and processes'],
+    ['#s9b .bp-section:nth-child(4) li:nth-child(2)','<strong>80% IA, 20% nosotros</strong> &mdash; a traves de la aplicacion cada area hara el fine tuning para afinar su contenido','<strong>80% AI, 20% us</strong> &mdash; through the app each area will fine-tune its own content'],
+    ['#s9b .bp-section:nth-child(4) li:nth-child(3)','<strong>Mejora continua</strong> &mdash; con la actualizacion de la base de conocimiento, la app propondra modificaciones que se podran aceptar o rechazar','<strong>Continuous improvement</strong> &mdash; as the knowledge base updates, the app will propose changes that can be accepted or rejected'],
+    ['#s9b .per .rl','Sponsor &amp; Lider','Sponsor &amp; Leader'],
+    ['#s9b .per .st-badge','Avanzado','Advanced'],
+    ['#s9b .estado-label','Estado:','Status:'],
   ];
 
   // Position MRP chip to span P2P and M2D rows — must run when S5 is visible
